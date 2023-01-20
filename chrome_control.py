@@ -20,7 +20,8 @@ class BrowserController():
         options.add_argument("--profile-directory=Default")
         # options.add_argument('--user-data-dir=C:\Users\09673479984\AppData\Roaming\cache')
         options.add_argument('--user-data-dir=tmp/browser') #no caso do windows
-        navegador = webdriver.Chrome("chromedriver.exe", options=options)
+        # navegador = webdriver.Chrome("chromedriver.exe", options=options) #para windows
+        navegador = webdriver.Chrome("chromedriver", options=options)#para linux
         return navegador
     def open_browser(self, url):
         
