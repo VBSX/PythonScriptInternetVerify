@@ -30,7 +30,7 @@ class BrowserController():
         return navegador
     
     def open_browser(self, url):
-
+        
         self.navegador.get(url)
         sleep(5)
 
