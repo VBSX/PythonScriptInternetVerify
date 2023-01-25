@@ -10,7 +10,7 @@ class InternetVerify():
 
     def check_internet(self):
         ''' checar conexão de internet '''
-        url = 'https://google.com/'
+        url = 'http://10.17.20.116/public'
         timeout = 5
         try:
             requests.get(url, timeout=timeout)
@@ -37,5 +37,7 @@ if __name__ == '__main__':
 
     while not internet.check_internet():
         print('erro net')
-        internet.matar_processo_navegador()
+        # internet.matar_processo_navegador()
+    else:
+        print('certo')
        
